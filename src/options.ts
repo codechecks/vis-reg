@@ -28,7 +28,7 @@ export function parseOptions(options: UserProvidedOptions, rootPath: string): Op
   };
 }
 
-function makePath(rootPath: string, path: string) {
+function makePath(rootPath: string, path: string): string {
   if (isAbsolute(path)) {
     return path;
   } else {
