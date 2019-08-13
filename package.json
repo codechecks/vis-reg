@@ -56,7 +56,6 @@
     "debug": "^4.1.1",
     "execa": "^2.0.3",
     "fs-extra": "^8.1.0",
-    "reg-simple-keygen-plugin": "^0.7.16",
     "reg-suit": "^0.7.23",
     "tmp-promise": "^2.0.2"
   },

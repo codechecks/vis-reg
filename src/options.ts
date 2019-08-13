@@ -1,4 +1,4 @@
-import { join } from "path";
+import { join, isAbsolute } from "path";
 import { ARTIFACT_KEY } from ".";
 
 export interface UserProvidedOptions {
@@ -23,7 +23,15 @@ export function parseOptions(options: UserProvidedOptions, rootPath: string): Op
 
   return {
     collectionName: options.collectionName,
-    imagesPath: join(rootPath, options.imagesPath),
+    imagesPath: makePath(rootPath, options.imagesPath),
     artifactName: `${ARTIFACT_KEY}/${options.collectionName}`,
   };
+}
+
+function makePath(rootPath: string, path: string) {
+  if (isAbsolute(path)) {
+    return path;
+  } else {
+    return join(rootPath, path);
+  }
 }
