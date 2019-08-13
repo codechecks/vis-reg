@@ -1,0 +1,5 @@
+checks:
+  - name: "../src/index.ts"
+    options:
+      collectionName: "example"
+      imagesPath: "./images/"
