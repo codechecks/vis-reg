@@ -1,7 +1,7 @@
 <p align="center">
   <img src="./meta/check.png" width="700" alt="codechecks.io">
-  <h3 align="center">Boilerplate codecheck</h3>
-  <p align="center">Perfect to start working on a new thing</p>
+  <h3 align="center">Visual Regression</h3>
+  <p align="center">Visual Regression on GitHub</p>
 
   <p align="center">
     <a href="https://circleci.com/gh/codechecks/build-size-watcher"><img alt="Build Status" src="https://circleci.com/gh/codechecks/build-size-watcher/tree/master.svg?style=svg"></a>
@@ -13,7 +13,7 @@
 ## Install
 
 ```sh
-npm install --save-dev boilerplate
+npm install --save-dev @codechecks/vis-reg
 ```
 
 ## Usage
@@ -25,9 +25,10 @@ Add to your `codechecks.yml` file:
 
 ```yml
 checks:
-  - name: boilerplate
+  - name: vis-reg
     options:
-      # ...
+      collectionName: "E2E" # arbitrary name, for example: e2e, storybook
+      imagesPath: "./images/" # path when current images are stored
   # ...
 ```
 
