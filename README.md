@@ -1,5 +1,4 @@
 <p align="center">
-  <img src="./meta/check.png" width="700" alt="codechecks.io">
   <h3 align="center">Visual Regression</h3>
   <p align="center">Visual Regression on GitHub</p>
 
